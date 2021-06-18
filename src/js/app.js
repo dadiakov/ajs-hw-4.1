@@ -6,5 +6,3 @@ export default function healthReturn(char) {
   }
   return 'critical';
 }
-
-healthReturn({ name: 'asd', health: 50 });
