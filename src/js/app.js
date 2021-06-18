@@ -1,6 +1,10 @@
-// TODO: write your code here
-import sum from './basic';
+export default function healthReturn(char) {
+  if (char.health > 50) {
+    return 'healthy';
+  } if (char.health >= 15 && char.health <= 50) {
+    return 'wounded';
+  }
+  return 'critical';
+}
 
-console.log('worked');
-
-console.log(sum([1, 2]));
+healthReturn({ name: 'asd', health: 50 });
